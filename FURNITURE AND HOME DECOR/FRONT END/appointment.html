@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="appointment_style.css" rel="stylesheet" type="text/css"/>
+<script src="https://kit.fontawesome.com/22e25e938b.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+</head>
+   
+<body>
+<header>
+        <div class="h1">Borahae</div>
+        <i><div class="h2">Love it till the end of the days.....</div></i>
+    </header>
+<div class="menu_bar">
+	<ul>
+	<li><a href="home.jsp"><i class="fa fa-fw fa-home"></i> Home</a></li>
+	<li><a href="#shop"> <i class="fab fa-shopify"></i>  Shop By Category</a><i style="font-size:17px" class="fa">&#xf0d7;</i>
+	<div class="dropdown_menu">
+	<ul>
+
+	<li><a href="livin.html">living room</a></li>
+	<li><a href="bedroom.html">Bed room</a></li>
+	<li><a href="Dining.html"> Dining</a></li>
+	<li><a href="Kitchen.html">kitchen</a></li>
+	</ul>
+	<li>
+        <a href="appointment.html"><i class="fas fa-tools"></i>Customer Service</a></li>
+        <li><a href="conta.html"><i class="fas fa-phone-square-alt"></i> Contact</a></li>
+<li><a href="ABOUT_US.html"><i class="fas fa-book-reader"></i>about us</a></li>
+      
+<li><i style="font-size:17px" class="fa" >&#xf07a;</i><a href="cartl.jsp">cart</a></li>
+        </ul></div>
+<br/>
+		<section>
+        <div class="leftBox">
+            <div class="content">
+			<h1> Meet Our Designers</h1>
+                
+  <form action="appointment.jsp" method="post">
+    <label id="te">Name</label><br>
+    <input type="text" id="sub" name="name" placeholder="Your name..">
+<br>
+    <label  id="te">Email</label><br>
+    <input type="text" id="sub" name="email" placeholder="Your mail Id..">
+	<br>
+	<label  id="te">Address</label><br>
+    <textarea id="sub" name="address" placeholder="Your address.." style="height:100px"></textarea>
+    <label  id="te">Contact No</label><br>
+    <input type="text" id="sub" name="contactno" placeholder="Your contact number..">
+	 <label  id="te">Sqft Area</label><br>
+    <input type="text" id="sub" name="sqftarea" placeholder="Your sqft area..">
+    
+<br>
+   <label  id="te">Working Scale</label><br>
+    <select id="sub" name="workingscale">
+      <option value="domestic">Domestic</option>
+      <option value="Commercial">Commercial</option>
+    </select>
+	  <label  id="te">Blueprint(image.jpg)</label><br>
+	  <input type="file" id="sub" name="blueprint" accept=".jpg">
+    <input type="submit" value="FIX  AN  APPOINTMENT" id="submit">
+  </form> 
+         </div>
+        </div>
+			</div>
+			</div>
+		</section>
+	<br/><br/>
+	<div class="faq">Frequently Asked Questions(FAQs)</div>
+	<br/>
+		<button class="accordion">1. Do you work with design professionals?</button>
+<div class="panel">
+  <p>We love working with designers and will go the extra mile to help professionals who are looking for furniture for their clients.
+  For more details, please contact our designing team.</p>
+</div>
+<br/>
+<hr>
+<button class="accordion">2. Can I edit my order once it has been placed?</button>
+<div class="panel">
+  <p>Sure thing! Just get in touch with our Customer Care team as soon as possible and they'll help you with any necessary changes.</p>
+</div>
+<br/>
+<hr>
+<button class="accordion">3.Can I cancel my order?</button>
+<div class="panel">
+  <p>Orders can be cancelled as long as they haven't already been shipped. To cancel, please contact our Customer Care team. 
+  In some cases, there may be a restocking fee or delivery fee if the order is canceled after it has already been picked up for delivery.</p>
+</div>
+<hr>
+<button class="accordion">4.Are the colours on the site accurate?</button>
+<div class="panel">
+  <p>The photos on the site are as accurate as possible. However, the actual colour of your
+  order may vary slightly due to different monitor settings. Please contact our Customer Care team with any quieres.</p>
+</div>
+<hr>
+<button class="accordion">5.What if my merchandise arrives damaged?</button>
+<div class="panel">
+  <p>Our delivery teams treat your order with care so it can arrive in the best condition possible, but if there is any visible damage on the merchandise or to your home during the delivery process, please notify our delivery team and make sure it is recorded in the delivery paperwork. 
+  Then, contact our Customer Care team within 72 hours of the delivery so we can try to repair or replace the damaged item as soon as possible.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+		<footer id="footer">
+<div class="footer-content">
+<h3>Contact</h3>
+<p><b>Mail to:</b>Borahae158@gmail.com</p>
+<h3>Follow us on</h3>
+<ul class="socials">
+<li><a href="#"><i style="font-size:20px" class="fa">&#xf082;</i></a>
+<li><a href="#"><i style="font-size:20px" class="fa">&#xf16d;</i></i></a>
+<li><a href="#"><i style="font-size:20px" class="fa">&#xf16a;</i></i></a>
+<li><a href="#"><i style="font-size:20px" class="fa">&#xf081;</i>
+</body></a>
+</ul>
+</div>
+<div class="footer-bottom">
+<p>copyright &copy;2021 Borahae</p>
+</div>
+</footer>
+</body>

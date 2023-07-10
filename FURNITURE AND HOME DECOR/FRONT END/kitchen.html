@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+<title>Kitchen </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="Kitchen_style.css" rel="stylesheet" type="text/css"/>
+<script src="https://kit.fontawesome.com/22e25e938b.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function Check()
+{
+var wel=document.getElementById("dm").value;
+
+if (wel <200 && wel > 0)
+{
+document.getElementById("n1").innerHTML="You Can Try";
+document.getElementById("n2").innerHTML="Mini Sofa Set";
+document.getElementById("n3").innerHTML="Designer Sofa";
+document.getElementById("n4").innerHTML="Magestic Sofa Set";
+document.getElementById("n5").innerHTML="Coffee Table";
+document.getElementById("n6").innerHTML="Wooden Long Johns Table";
+document.getElementById("n7").innerHTML="Wooden Contrast Table";
+document.getElementById("n8").innerHTML="Wooden Shine TV  Unit";
+document.getElementById("n9").innerHTML="Traditional Teak Wood TV  Unit";
+document.getElementById("n10").innerHTML="Cube Smart TV  Unit";
+}
+else if (wel <300 && wel >200)
+{
+document.getElementById("n1").innerHTML="You Can Try";
+document.getElementById("n2").innerHTML="Recliner";
+document.getElementById("n3").innerHTML="L Shape Sofa Set";
+document.getElementById("n4").innerHTML="Tufted Back Sofa Set";
+document.getElementById("n5").innerHTML="Modern Sofa Set";
+document.getElementById("n6").innerHTML="Curved Round Wooden Coffee Table";
+document.getElementById("n7").innerHTML="Solid Wood INDIANA Coffee Table";
+document.getElementById("n8").innerHTML="Solid Wood Czar Coffee Table";
+document.getElementById("n9").innerHTML="Thomas Wall Mounted Tv unit in Matt Finish";
+document.getElementById("n10").innerHTML="Woodness Lucky TV Entertainment Unit";
+}
+else
+{
+document.getElementById("n1").innerHTML="You Can Try";
+document.getElementById("n2").innerHTML="Sectional Sofa Set";
+document.getElementById("n3").innerHTML="Corner Sofa Set";
+document.getElementById("n4").innerHTML="Wooden Center Table";
+document.getElementById("n5").innerHTML="Solid Wood Curved Table";
+document.getElementById("n6").innerHTML="Wooden Curved Square Table";
+document.getElementById("n7").innerHTML="Wooden TV Entertainment Unit";
+document.getElementById("n8").innerHTML="Curved Wooden TV Entertainment Unit";
+document.getElementById("n9").innerHTML="Wooden Wall Mounted TV  Unit";
+document.getElementById("n10").innerHTML="Solid Wood INDIANA Lass TV  Unit";
+}
+}
+</script>
+</head>
+   
+<body>
+<header>
+        <div class="h1">Borahae</div>
+        <i><div class="h2">Love it till the end of the days.....</div></i>
+    </header>
+<div class="menu_bar">
+	<ul>
+	<li><a href="home.jsp"><i class="fa fa-fw fa-home"></i> Home</a></li>
+	<li><a href="#shop"> <i class="fab fa-shopify"></i>  Shop By Category</a><i style="font-size:17px" class="fa">&#xf0d7;</i>
+	<div class="dropdown_menu">
+	<ul>
+
+	<li><a href="livin.html">living room</a></li>
+	<li><a href="bedroom.html">Bed room</a></li>
+	<li><a href="Dining.html"> Dining</a></li>
+	<li><a href="kitchen.html">Kitchen</a></li>
+	</ul>
+	<li>
+        <a href="appointment.html"><i class="fas fa-tools"></i>Customer Service</a></li>
+        <li><a href="conta.html"><i class="fas fa-phone-square-alt"></i> Contact</a></li>
+<li><a href="ABOUT_US.html"><i class="fas fa-book-reader"></i>about us</a></li>
+      
+<li><i style="font-size:17px" class="fa" >&#xf07a;</i><a href="cartl.jsp">cart</a></li>
+     </ul></div>
+
+
+<div class="navimg"><img src="k4.jpg" height="540px" width="100%"></div>
+       
+	
+<div id="sidebar">
+<div class="togglemenu" >
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<ul>
+ <li> <a href="#KitchenCabinets">Kitchen Cabinets</a></li>
+  <li><a href="#IslandTable"> Island Table</a></li>
+<li><a href="#Lightings">Lightings</a></li>
+  <li><a href="#KitchenDecor">Kitchen Decor</a></li>
+ </ul>
+ <div class="togglemenu" >
+<span></span>
+<span></span>
+</div>
+  </div>
+  <a name="KitchenCabinets"></a>
+  <p id="sofa">Kitchen Cabinets</p>
+  <div class="card">
+  <img src="k7.jpg"   style="width:100%">
+  <h1>Zara Wooden Crockery Cabinet</h1>
+  
+  <p class="price">MRP <del>Rs. 15,000</del> Rs. 9,000<br>
+  You save Rs. 6,000</p>
+  <p> Dimensions:30.2*21.4</p>
+<p>Dimensions in inches</p>
+  <p>Color:Light Blue </p>
+ 
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Zara Wooden Crockery Cabinet" />
+   <input type="hidden" name="product_price" value="9000" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k5.jpg"    height="300px" style="width:100%">
+  <h1>Wooden 3 Partition Storage Cabinet</h1>
+  <p class="price">MRP <del>Rs. 5,000</del> Rs. 3,200<br>
+  You save Rs. 1,800</p>
+  <p><b>Product Dimensions:</b>29.5*20.3</p>
+<p>Dimensions in inches</p>
+  <p><b>Color:</b>Light Brown</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Wooden 3 Partition Storage Cabinet" />
+   <input type="hidden" name="product_price" value="3200" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+ 
+  </div>
+  <div class="card">
+  <img src="k6.jpg"  height="240px" style="width:100%">
+  <h1>Faza 5 Partition Cabinet </h1>
+<p> White Mica Sheet Plywood Coated With Pull Drawers </p>
+  <p class="price">MRP <del>Rs.25,000</del> Rs.21,000<br>
+  You save Rs.4,000</p>
+
+   <p><b>Product Dimensions:</b>30*26</p>
+<p>Dimensions in inches</p>
+   <p><b>Color:</b>White</p>
+   <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Faza 5 Partition Cabinet" />
+   <input type="hidden" name="product_price" value="21000" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k8.jpg" height="280px" style="width:100%">
+  <h1>Long Side Cabinet With Transparent Glass Display</h1>
+  <p class="price">Rs.18,000</p>
+
+  <p><b>Product Dimensions:</b> 135.5*26.8</p>
+<p>Dimensions in inches</p>
+   <p><b>Color:</b>White</p>
+   <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Long Side Cabinet With Transparent Glass Display" />
+   <input type="hidden" name="product_price" value="18000" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k9.jpg" height="320px"  style="width:100%">
+  <h1>Movable Tricolor Wooden Cabinet</h1>
+  <p class="price">Rs.16,890</p>
+  <p><b>Product Dimensions:</b> 20.3*36</p>
+<p>Dimensions in inches</p>
+   <p><b>Color:</b>Yellow White and Grey</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Movable Tricolor Wooden Cabinet" />
+   <input type="hidden" name="product_price" value="16890" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k10.jpg" height="280px" style="width:100%">
+  <h1>Ratho Wooden Cabinet With shutter Doors</h1>
+  <p class="price">Rs.16,000</p>
+   <p><b>Product Dimensions:</b>32.5*26.3</p>
+<p>Dimensions in inches</p>
+   <p><b>Color:</b> White</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Ratho Wooden Cabinet With shutter Doors" />
+   <input type="hidden" name="product_price" value="16000" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+
+<a name="IslandTable"></a>
+  <p id="sofa">Island Table</p>
+  <div class="card">
+  <img src="k11.jpg"  style="width:100%">
+  <h1>YG Stainless Steel Island Table With Wooden Counter Top</h1>
+   <p class="price">Rs.3,250</p>
+   <p><b>Product Dimensions:</b>45.9*27.2</p>
+<p>Dimensions in inches</p>
+   <p><b>Color:</b> White</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="YG Stainless Steel Island Table With Wooden Counter Top" />
+   <input type="hidden" name="product_price" value="3250" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k12.jpg"  style="width:100%">
+  <h1>Stylish Wooden Island Table With Storage Units </h1>
+  <p class="price">Rs.20,000</p>
+   <p><b>Product Dimensions:25.6*38.9</b></p>
+<p>Dimensions in inches</p>
+   <p><b>Color:</b> White</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Stylish Wooden Island Table With Storage Units" />
+   <input type="hidden" name="product_price" value="20000" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k13.jpg"  style="width:100%">
+  <h1>Wooden Center Island Cabinet With Wheels</h1>
+  <p class="price">Rs.19,999</p>
+   <p><b>Product Dimensions:</b>24*36</p>
+<p>Dimensions in inches</p>
+   <p><b>Color:</b> White</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Wooden Center Island Cabinet With Wheels" />
+   <input type="hidden" name="product_price" value="19999" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k14.jpg" height="280px" style="width:100%">
+  <h1>Island Cabinet With Garnite Counter Top</h1>
+  <p class="price">Rs.28,990</p>
+   <p><b>Product Dimensions:</b>32.5*48.3</p>
+<p>Dimensions in inches</p>
+   <p><b>Color:</b>Teak Wood</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Island Cabinet With Garnite Counter Top" />
+   <input type="hidden" name="product_price" value="28990" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+
+  <div class="card">
+  <img src="k16.jpg" height="280px"  style="width:100%">
+  <h1>White Island Table With Black Marble Counter Top</h1>
+  <p class="price">Rs.12,690</p>
+   <p><b>Product Dimensions:</b>27*27</p>
+<p>Dimensions in inches</p>
+   <p><b>Color:</b> White</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="White Island Table With Black Marble Counter Top" />
+   <input type="hidden" name="product_price" value="12690" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k15.jpg" height="320px"  style="width:100%">
+  <h1>Island Table With Two Chair</h1>
+  <p class="price">Rs.21,675</p>
+   <p><b>Product Dimensions:</b>37.5*26.3</p>
+<p>Dimensions in inches</p>
+   <p><b>Color:</b> Black</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Island Table With Two Chair" />
+   <input type="hidden" name="product_price" value="21675" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+
+<a name="Lightings"></a>
+
+  <p id="sofa">Lightings</p>
+  <div class="card">
+  <img src="k17.jpg" height="260px" style="width:100%">
+  <h1>YG Golden Light Hangings  For Kitchen Island Table x2</h1>
+   
+   <p class="price">Rs.3,850</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="YG Golden Light Hangings  For Kitchen Island Table x2" />
+   <input type="hidden" name="product_price" value="3850" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k18.jpg"  height="260px" style="width:100%">
+  <h1>Antique Light Hanging For Kitchen Island Table</h1>
+ 
+  <p class="price">Rs.4,865</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Antique Light Hanging For Kitchen Island Table" />
+   <input type="hidden" name="product_price" value="4865" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k19.jpg"  height="330px" style="width:100%">
+  <h1>Moody Brown Light Hanging x3</h1>
+ 
+  <p class="price">Rs.1,500</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Moody Brown Light Hanging x3" />
+   <input type="hidden" name="product_price" value="1500" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k20.jpg" height="270px" style="width:100%">
+  <h1>Cylinder Shapped White Light Hangings x3</h1>
+
+  <p class="price">Rs.2,500</p>
+ <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Cylinder Shapped White Light Hangings x3" />
+   <input type="hidden" name="product_price" value="2500" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+
+  <div class="card">
+  <img src="k21.jpg"  height="270px" style="width:100%">
+  <h1>HYG LED Cage Shapped Light Hanging</h1>
+  <p class="price">Rs.1,999</p>
+   <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="HYG LED Cage Shapped Light Hanging" />
+   <input type="hidden" name="product_price" value="1999" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k22.jpg"  height="310px"  style="width:100%">
+  <h1>Fancy Hat Shapped Light Hangings x3</h1>
+ 
+  <p class="price">Rs. 1,400</p>
+   <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Fancy Hat Shapped Light Hangings x3" />
+   <input type="hidden" name="product_price" value="1400" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+
+
+<a name="KitchenDecor"></a>
+
+  <p id="sofa">Kitchen Decor</p>
+  <div class="card">
+  <img src="k23.jpg"  height="300px" style="width:100%">
+  <h1>Artifical Plant Decor Set Of Four</h1>
+<p class="price">Rs.650</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Artifical Plant Decor Set Of Four" />
+   <input type="hidden" name="product_price" value="650" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k24.jpg"  height="270px" style="width:100%">
+  <h1>Multi Purpose Iron Wall Shelf Storage Rack Organizer</h1>
+  <p class="price">Rs.950</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Multi Purpose Iron Wall Shelf Storage Rack Organizer" />
+   <input type="hidden" name="product_price" value="950" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k25.jpg"  height="270px" style="width:100%">
+  <h1>Wall Board For Kitchen With Ladle Hanger</h1>
+  <p class="price">Rs.2,500</p>
+ <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Wall Board For Kitchen With Ladle Hanger" />
+   <input type="hidden" name="product_price" value="2500" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k26.jpg" height="280px" style="width:100%">
+  <h1>Plant Pots For Herbs - Kitchen Decor Set of Three</h1>
+  <p class="price">Rs.850</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Multi Purpose Iron Wall Shelf Storage Rack Organizer" />
+   <input type="hidden" name="product_price" value="950" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k27.jpg" height="280px" style="width:100%">
+  <h1>Kitchen Door Hanging/Mom's Kitchen</h1>
+  <p class="price">Rs.750</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Kitchen Door Hanging/Mom's Kitchen" />
+   <input type="hidden" name="product_price" value="750" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+  <div class="card">
+  <img src="k28.jpg"  height="310px"  style="width:100%">
+  <h1>Cute Wall Hanging For Kichen </h1>
+  <p class="price">Rs.450</p>
+  <form action="product.jsp" method="GET" >
+   <input type="hidden" name="product_name" value="Cute Wall Hanging For Kichen" />
+   <input type="hidden" name="product_price" value="450" />
+   <b>Quantity:</b><input type="number" name="product_quantity"/>
+         
+       <button type="submit">
+           <span>Add to Cart </span>
+       </button>
+   </div>
+</form>
+</div>
+
+<div class="d"><hr>
+<center><form name="try" >
+<div id="tr"><b>Having Trouble In Finding Out The Right Product ??</b></div><br>
+<div id="cr"><b>Enter Your Room's Dimension Here</b></div><br>
+<div id="cr"><b>Dimension:<b><input type="number"  id="dm" placeholder="Enter dimension in Sq.ft "></div><br>
+<input type="button" value="Check" id="fi" onclick="Check()">
+</form>
+<p id="n1"></p>
+<p id="n2" ></p>
+<p id="n3" ></p>
+<p id="n4" > </p>
+<p id="n5"></p>
+<p id="n6" > </p>
+<p id="n7" >  </p>
+<p id="n8" > </p>
+<p id="n9" > </p>
+<p id="n10" > </p></center></div>
+
+
+
+   
+
+
+<footer id="footer">
+<div class="footer-content">
+<h3>Contact</h3>
+<p><b>Mail to:</b>Borahae158@gmail.com</p>
+<h3>Follow us on</h3>
+<ul class="socials">
+<li><a href="contact.html"><i style="font-size:20px" class="fa">&#xf082;</i></a>
+<li><a href="#"><i style="font-size:20px" class="fa">&#xf16d;</i></i></a>
+<li><a href="#"><i style="font-size:20px" class="fa">&#xf16a;</i></i></a>
+<li><a href="#"><i style="font-size:20px" class="fa">&#xf081;</i>
+</body></a>
+</ul>
+</div>
+<div class="footer-bottom">
+<p>copyright &copy;2021 Borahae</p>
+</div>
+</footer>
+</body>
+   
+</html>

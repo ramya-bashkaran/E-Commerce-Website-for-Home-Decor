@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Video Gallery</title>
+</head>
+<body>
+
+<div class="back">
+
+<a href="ABOUT_US.html">
+<i  style="font-size:40px;  color:#fff"S class=" fa">&#xf0a8;</i>
+ </a>
+
+</div>
+
+
+
+    <div class="container">
+        <h1>Welcome To Video Gallery</h1>
+        <div id="video_player">
+            <video controls poster="" class="video" id="video">
+                <source src="room1.mp4" type="video/mp4">
+                <source src="room1.mp4" type="video/mp4">
+            </video>
+            <div class="scrollBox">
+                <div class="box">
+                    <img src="p1.jpg">
+                    <div class="box-content">
+                        <h3>Designing Moderate-Size Room With Work Area</h3>
+                        <a href="room1.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="p2.jpg">
+                    <div class="box-content">
+                        <h3>Compact Apartment With Storage Space</h3>
+                        <a href="room2.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="p3.jpg">
+                    <div class="box-content">
+                        <h3>Spacious Modular Kitchen With Serving Unit</h3>
+                        <a href="room3.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="p4.jpg">
+                    <div class="box-content">
+                        <h3>Marble Finished Den Area</h3>
+                        <a href="room4.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="p5.jpg" >
+                    <div class="box-content">
+                        <h3>Kids Split Bedroom Interior Design</h3>
+                        <a href="room5.mp4"class="btn">Watch</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="p6.jpg">
+                    <div class="box-content">
+                        <h3>Compact Bedroom With Spacious Storage Units</h3>
+                        <a href="room6.mp4" class="btn">Watch</a>
+  </div>
+                </div>
+
+<div class="box">
+                   <img src="p7.jpg" >
+                    <div class="box-content">
+                        <h3>Luxurious Modular Kitchen With Branded Modern Technologies</h3>
+                        <a href="room7.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+
+<div class="box">
+             <img src="p8.jpg">
+                    <div class="box-content">
+                        <h3>Small-Sized Bedroom With Study Area</h3>
+                        <a href="room8.mp4" class="btn">Watch</a>
+  </div>
+                </div>
+
+<div class="box">
+                    <img src="p9.jpg">
+                    <div class="box-content">
+                        <h3>Entire Interior Work For A Tiny Apartment</h3>
+                        <a href="room9.mp4" class="btn">Watch</a>
+  </div>
+                </div>
+
+<div class="box">
+                  <img src="p10.jpg">
+                    <div class="box-content">
+                        <h3>Entire Apartment Interior Work With Well Ventilation And Lighting </h3>
+                        <a href="room10.mp4" class="btn">Watch</a>
+
+  </div>
+                </div>
+
+<div class="box">
+                  <img src="p11.jpg">
+                    <div class="box-content">
+                        <h3>Balcony With Laundry Service Area</h3>
+                        <a href="room11.mp4" class="btn">Watch</a>
+ </div>
+                </div>
+
+<div class="box">
+                    <img src="p12.jpg">
+                    <div class="box-content">
+                        <h3>Small-Sized Bedroom With More Space</h3>
+                        <a href="room12.mp4" class="btn">Watch</a>
+</div>
+                </div>
+
+<div class="box">
+                   <img src="p13.jpg">
+                    <div class="box-content">
+                        <h3>White Marbled Bathroom With Dry And Wet Area</h3>
+                        <a href="room13.mp4" class="btn">Watch</a>
+  </div>
+                </div>
+
+<div class="box">
+                <img src="p14.jpg" width="100%">
+                    <div class="box-content">
+                        <h3>Master Bedroom With More Storage Units</h3>
+                        <a href="room14.mp4" class="btn">Watch</a>
+  </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let anchors = document.querySelectorAll('div .btn');
+    let links = [...anchors];
+
+    for (let i=0; i<links.length; i++) {
+        links[i].onclick = handler;
+    }
+    function handler(e) {
+        e.preventDefault();
+        let videotarget = this.getAttribute("href");
+        let filename = videotarget.substr(0, videotarget.lastIndexOf('.'));
+        let video = document.getElementById("video");
+        video.removeAttribute("poster");
+        let source = document.querySelectorAll("#video_player video source");
+        source[0].src = filename + ".mp4";
+        source[1].src = filename + ".mp4";
+        video.load();
+        video.play();
+    }
+    </script>
+</body>
+</html>

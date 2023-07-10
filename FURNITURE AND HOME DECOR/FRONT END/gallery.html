@@ -1,0 +1,325 @@
+<html>
+<head>
+<title>Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="gallery_style.css">
+<script src="https://kit.fontawesome.com/5fe4df208e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="h1">Borahae</div>
+        <i><div class="h2">Love it till the end of the days.....</div></i>
+    </header>
+
+
+    <section>
+
+        <div class="navbar">
+            <a href="home.jsp"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="gallery.html"><i class="far fa-images"></i> Gallery</a>
+            <a href="video.html"><i class="fas fa-video"></i> Videos</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Branches
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="conta.html">Florida</a>
+                    <a href="conta.html">Norway</a>
+                    <a href="conta.html">Seoul</a>
+                    <a href="conta.html">India</a>
+                    <a href="conta.html">Brazil</a>
+                    <a href="conta.html">Japan</a>
+                    <a href="conta.html">Singapore</a>
+                </div>
+            </div>
+			
+        </div>
+
+        </header>
+ 
+
+        <div class="slideshow-container">
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="com 1.jpg" width="1500" height="600">
+                <div class="text">Headquarters @Seoul</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="rec.jpg" width="1500" height="600">
+                <div class="text">Reception</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="com 2.jpg" width="1500" height="600">
+                <div class="text">Inner space</div>
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+
+        <script>
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+        </script>
+
+        
+
+        <div class="image">
+            <div id="pro">
+                <figure>
+                    <img src="in 1.jpg" width="500" height="350">
+                </figure>
+                <div class="desc"><h3>Office @Orlando</h3></div>
+            </div>
+        </div>
+
+        <div class="image">
+            <div id="pro">
+                <figure>
+                    <img src="in 2.jpg" width="500" height="350">
+
+                </figure>
+                <div class="desc"><h3>Office @Japan</h3></div>
+            </div>
+        </div>
+
+        <div class="image">
+            <div id="pro">
+                <figure>
+                    <img src="wor 3.jpg" width="500" height="350">
+                </figure>
+                <div class="desc"><h3>Satisfactory customers</h3> </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="image">
+            <div id="pro">
+                <figure>
+                    <img src="wor 4.jpg" width="500" height="350">
+
+                </figure>
+                <div class="desc"><h3>Customized designs</h3> </div>
+            </div>
+        </div>
+
+        <div class="image">
+            <div id="pro">
+                <figure>
+                    <img src="wor 1.jpg" width="500" height="350">
+
+                </figure>
+                <div class="desc"><h3>Professional Designers </h3></div>
+            </div>
+        </div>
+
+        <div class="image">
+            <div id="pro">
+                <figure>
+                    <img src="wor 2.jpg" width="500" height="350">
+                </figure>
+                <div class="desc"><h3>Professional Guidance </h3></div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="image">
+            <div id="pro">
+                <figure>
+                    <img src="fac 2.jpg" width="500" height="350">
+                </figure>
+                <div class="desc"><h3>Factory site @Brazil </h3> </div>
+            </div>
+        </div>
+
+        <div class="image">
+            <div id="pro">
+                <figure>
+                    <img src="staff7.jpg" width="500" height="350">
+
+                </figure>
+                <div class="desc"><h3>Factory site @Seoul </h3></div>
+            </div>
+        </div>
+
+        <div class="image">
+            <div id="pro">
+                <figure>
+                    <img src="fac 3.jpg" width="500" height="350">
+
+                </figure>
+                <div class="desc"><h3>Storage unit</h3></div>
+            </div>
+        </div>
+
+        <br />
+        <br />.
+
+        <div id="gallery2">
+            <div id="pro">
+                <figure>
+                    <img src="ch fac.jpg" width="500" height="350">
+
+                </figure>
+                <div class="desc"><h3>Factory @Chennai </h3> </div>
+            </div>
+        </div>
+
+        <div id="gallery2">
+            <div id="pro">
+                <figure>
+                    <img src="staff4.jpeg" width="490" height="350">
+
+                </figure>
+                <div class="desc"><h3>Friendly Staffs </h3></div>
+            </div>
+        </div>
+
+        <div id="gallery2">
+            <div id="pro">
+                <figure>
+                    <img src="staff9.jpg" width="500" height="350">
+                </figure>
+                <div class="desc"><h3>Talented Teams </h3></div>
+            </div>
+        </div>
+        <div id="gallery2">
+            <div id="pro">
+                <figure>
+                    <img src="staff5.jpg" width="500" height="350">
+                </figure>
+                <div class="desc"><h3> Adequate Quality and Service </h3></div>
+            </div>
+        </div>
+
+        <div id="gallery2">
+            <div id="pro">
+                <figure>
+                    <img src="wood.jpg" width="500" height="350">
+                </figure>
+                <div class="desc"><h3>High Quality Raw Materials </h3></div>
+            </div>
+        </div>
+
+
+        <div id="gallery2">
+            <div id="pro">
+                <figure>
+                    <img src="staff8.jpg" width="500" height="350">
+                </figure>
+                <div class="desc"><h3>Work @Commercial Site</h3></div>
+            </div>
+        </div>
+
+        <div id="gallery2">
+            <div id="pro">
+                <figure>
+                    <img src="staff2.jpg" width="500" height="350">
+
+                </figure>
+                <div class="desc"><h3> Work @Domestic Site</h3> </div>
+            </div>
+        </div>
+
+        <div id="gallery2">
+            <div id="pro">
+                <figure>
+                    <img src="wor 2.jpg" width="500" height="350">
+                </figure>
+                <div class="desc"><h3>Professional Designers </h3></div>
+            </div>
+        </div>
+
+        <div id="gallery2">
+            <div id="pro">
+                <figure>
+                    <img src="staff6.jpg" width="500" height="350">
+
+                </figure>
+                <div class="desc"><h3>High Durabilty Products </h3></div>
+            </div>
+        </div>
+
+        <div id="gallery2">
+            <div id="pro">
+                <figure>
+                    <img src="store1.jpg" width="500" height="350">
+                </figure>
+                <div class="desc"><h3>Furniture store @Seoul </h3></div>
+            </div>
+        </div>
+        <div id="gallery2">
+            <div id="pro">
+                <figure>
+                    <img src="store2.jpg" width="500" height="350">
+                </figure>
+                <div class="desc"><h3>Furniture store @Orlando </h3></div>
+            </div>
+        </div>
+
+        <div id="gallery2">
+            <div id="pro">
+                <figure>
+                    <img src="store3.jpg" width="500" height="350">
+                </figure>
+                <div class="desc"><h3>Antique Decoration store @Norway </h3></div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+    </section>
+    <br />
+    <br />
+    <br />
+

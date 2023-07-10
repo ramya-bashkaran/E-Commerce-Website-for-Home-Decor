@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    <link href='https://www.soengsouy.com/favicon.ico' rel='icon' type='image/x-icon'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
+    <link rel="stylesheet" href="Payment_style.css">
+</head>
+<body>
+
+<h2>Shipping And Payment</h2>
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form action="PaymentAction.jsp" method ="post">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="fullname" placeholder="Enter Your Fullname" required>
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter Your Email Id" required>
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address" placeholder="Address" required>
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="eg.Chennai" required>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="eg.Tamil Nadu"required>
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip_code" placeholder="eg.600254"required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="Name"required>
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="carnum" placeholder="1111-2222-3333-4444"required>
+                        <label for="expmonth">Exp Month</label>
+                      <select name="exp_month" class="button" required>
+    <option value="January">January</option>
+     <option value="Febuary">Febuary</option>
+<option value="March">March</option>
+    <option value="April">April</option>
+     <option value="May">May</option>
+<option value="June">June</option>
+    <option value="July">July</option>
+     <option value="August">August</option>
+<option value="September">September</option>
+    <option value="October">October</option>
+     <option value="November">November</option>
+<option value="December">December</option>
+ </select>
+<br> <br>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+<select name="exp_num" class="button" required>
+                 <option value="2022">2022</option>
+     <option value="2023">2023</option>
+<option value="2024">2024</option>
+    <option value="2025">2025</option>
+     <option value="2026">2026</option>
+<option value="2027">2027</option>
+    <option value="2028">2028</option>
+     <option value="2029">2029</option>
+<option value="2030">2030</option>
+ </select>           <br>
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="password" id="cvv" name="cvv" class="button"  required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <input type="submit" value="Confirm To Place Order" class="btn">
+            </form>
+        </div>
+    </div>
+<!-- script validate js -->
+<script>
+    $('#validate').validate({
+        roles: {
+            fullname: {
+                required: true,
+            },
+            email: {
+                required: true,
+            },
+            address: {
+                required: true,
+            },
+            city: {
+                required: true,
+            },
+            state: {
+                required: true,
+            },
+            zip_code: {
+                required: true,
+            },
+            cardname: {
+                required: true,
+            },
+            cardnum: {
+                required: true,
+            },
+            exp_month: {
+                required: true,
+            },
+            exp_year: {
+                required: true,
+            },
+            cvv: {
+                required: true,
+            },
+           
+        },
+        messages: {
+            fullname:"Please input full name*",
+            email:"Please input email*",
+            city:"Please input city*",
+            address:"Please input address*",
+            state:"Please input state*",
+            zip:"Please input address*",
+            cardname:"Please input card name*",
+            cardnumber:"Please input card number*",
+            expmonth:"Please input exp month*",
+            expyear:"Please input exp year*",
+            cvv:"Please input cvv*",
+        },
+    });
+</script>
+</body>
+</html>
