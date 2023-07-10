@@ -20,26 +20,27 @@ This project is an e-commerce website built using HTML, CSS, and JSP for the bac
 
 ## Modules
 ***Home***
-The Home page serves as the starting point of your journey on our website. It showcases our top categories and highlights our previous works, giving you a glimpse of our expertise and design aesthetics.
+The Home page serves as the starting point of the website. It showcases top categories and highlights previous works, giving visitors a glimpse of expertise and design aesthetics.
 
 ***Login and Register***
-We offer a convenient login and registration system that allows you to create an account and access personalized features, such as saved preferences and order history.
+Visitors can conveniently log in or register to create an account and access personalized features, such as saved preferences and order history.
 
 ***Shop By Category***
-Explore our wide range of furniture and home decoration items through our Shop By Category module. You can easily navigate through different sections, including Living Room, Bedroom, Kitchen, and Dining, to find products that suit your specific needs and style.
+The website offers a wide range of furniture and home decoration items categorized by sections, including Living Room, Bedroom, Kitchen, and Dining. Visitors can easily navigate through these sections to find products that suit their specific needs and style.
 
 ***About Us***
-Get to know us better through our About Us section. We provide essential information about our website, including our journey, team, and philosophy. Additionally, we showcase our gallery and videos, giving you a closer look at our management, infrastructure, and top previous designs.
+The About Us section provides essential information about the website, including its journey, team, and philosophy. It may showcase a gallery and videos, giving visitors a closer look at the management, infrastructure, and previous designs.
 
 ***Contact***
-If you have any questions or would like to get in touch with us, our Contact page is where you'll find the necessary information. We list our branches and their contact details, and we also provide a convenient contact form for your convenience.
+The Contact page provides visitors with the necessary information to get in touch with the website. It lists branches and their contact details, along with a convenient contact form for inquiries and messages.
 
 ***Customer Service***
-Our Customer Service module is designed to make your experience even more personalized. You can fix an appointment to book our talented interior designers, who will assist you in creating the perfect design for your home. Additionally, we have an FAQ section where you can find answers to commonly asked questions.
+The Customer Service module aims to enhance the visitor's experience. It may include features such as appointment fixation to book interior designers who can assist in creating the perfect home design. Additionally, an FAQ section may be available to address commonly asked questions.
 
 ***Cart***
-Once you've found your desired products, our Cart feature allows you to review and manage your selected items before proceeding to checkout. It ensures a smooth and secure shopping process.
+Visitors can review and manage selected items before proceeding to checkout through the Cart feature. It ensures a smooth and secure shopping process.
 
+The website's modules provide a comprehensive and user-friendly platform for visitors to explore and purchase furniture and home decoration items.
 ## Prerequisites
 Before running the code, ensure that you have the following dependencies installed:
 1. Apache Tomcat (version 9)
