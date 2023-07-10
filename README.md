@@ -1,6 +1,4 @@
 # E-Commerce-Website-for-Home-Decor
-Borahae: Your one-stop shop for high-quality furniture that combines style and comfort. Discover a wide range of options to create a stylish and cozy home environment. 
-
 This project is an e-commerce website built using HTML, CSS, and JSP for the backend, designed specifically for selling furniture and home decoration items. It utilizes Apache Tomcat as the web server to host and run the application.
 
 # Features
