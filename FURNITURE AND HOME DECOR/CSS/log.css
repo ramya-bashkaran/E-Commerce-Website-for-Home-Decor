@@ -1,0 +1,118 @@
+* {
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body{
+	font-family: poppins;
+	font-size: 16px;
+	color: #fff;
+   background-image:linear-gradient(to right,rgba(255,0,0,0),rgba(255,0,0,1));
+}
+}
+
+.back{
+position: absolute;
+top:0;
+left:0;
+color:blue;
+}
+
+.form-box {
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+
+  transform: translate(-50%,-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow:0 0 10px #000;
+width: 450px;
+height: 430px;
+}
+.form-box header{
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.field span{
+  color: #800000;
+  width: 40px;
+  line-height: 45px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.space{
+  margin-top: 16px;
+}
+.show{
+ text-align:left;
+font-size:18px;
+}
+.pass-key:valid ~ .show{
+  display: block;
+}
+.pass{
+  text-align: left;
+  margin: 10px 0;
+}
+.pass a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+.pass:hover a{
+  text-decoration: underline;
+}
+.field input[type="submit"]{
+  background: #800000;
+  border: 1px solid red;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.field input[type="submit"]:hover{
+  background-color: red;
+}
+.login{
+  color: white;
+  margin: 20px 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+.signup{
+  font-size: 15px;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+}
+.signup a{
+  color: #800000;
+  text-decoration: none;
+}
+.signup a:hover{
+  text-decoration: underline;
+}
